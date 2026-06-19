@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayden · Projects</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1e293b, #0b1120);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 64px 20px;
+    }
+    header { text-align: center; margin-bottom: 48px; }
+    h1 { font-size: 2.6rem; letter-spacing: -1px; }
+    .accent { color: #38bdf8; }
+    header p { color: #94a3b8; margin-top: 10px; font-size: 1.05rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 920px;
+    }
+    a.card {
+      text-decoration: none;
+      color: inherit;
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    }
+    a.card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+      box-shadow: 0 12px 30px rgba(56,189,248,.12);
+    }
+    .emoji { font-size: 2rem; }
+    .card h2 { font-size: 1.2rem; margin: 14px 0 6px; }
+    .card p { color: #94a3b8; font-size: .92rem; line-height: 1.45; }
+    footer { margin-top: 56px; color: #64748b; font-size: .85rem; }
+    footer a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm <span class="accent">Rayden</span> 👋</h1>
+    <p>A few small things I built. Click any card to try it live.</p>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="calculator/">
+      <div class="emoji">🧮</div>
+      <h2>Calculator</h2>
+      <p>A clean keyboard-friendly calculator.</p>
+    </a>
+    <a class="card" href="todo/">
+      <div class="emoji">✅</div>
+      <h2>To-Do List</h2>
+      <p>Add tasks, check them off — saved in your browser.</p>
+    </a>
+    <a class="card" href="memory-game/">
+      <div class="emoji">🧠</div>
+      <h2>Memory Game</h2>
+      <p>Flip cards and match the pairs. Beat your best time.</p>
+    </a>
+    <a class="card" href="color-tool/">
+      <div class="emoji">🎨</div>
+      <h2>Color Picker</h2>
+      <p>Generate palettes and copy hex codes in one click.</p>
+    </a>
+    <a class="card" href="clock/">
+      <div class="emoji">🕒</div>
+      <h2>Digital Clock</h2>
+      <p>A live clock with date and a light/dark toggle.</p>
+    </a>
+  </main>
+
+  <footer>
+    Built with plain HTML, CSS &amp; JavaScript · <a href="https://github.com/">github.com</a>
+  </footer>
+</body>
+</html>
